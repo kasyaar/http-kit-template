@@ -2,6 +2,9 @@
   (:use 
     compojure.core
     [compojure.handler :only [site]]
+    [ring.middleware.cookies :only [wrap-cookies]]
+    [ring.middleware.params :only [wrap-params]]
+    [ring.middleware.keyword-params :only [wrap-keyword-params]]
     [ring.util.response :only [status response]]
     org.httpkit.server)
   (:require 
@@ -16,5 +19,5 @@
 
 
 (defn -main [port] 
-  (run-server (site #'all-routes)  {:port (Integer. port)})
+  (run-server (site #'all-routes wrap-cookies wrap-keyword-params wrap-params)  {:port (Integer. port)})
   (println (str "Server started on " port " port")))
