@@ -1,4 +1,4 @@
-(ns {{name}}.core
+(ns {{project-name}}.core
   (:use 
     compojure.core
     [compojure.handler :only [site]]

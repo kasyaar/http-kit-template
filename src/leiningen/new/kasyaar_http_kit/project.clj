@@ -1,12 +1,12 @@
-(defproject {{name}} "0.1.0-SNAPSHOT"
+(defproject {{project-name}} "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   
-  :main {{name}}.core
-  :aot [{{name}}.core]
-  :uberjar-name "{{name}}.jar"
+  :main {{project-name}}.core
+  :aot [{{project-name}}.core]
+  :uberjar-name "{{project-name}}.jar"
   :plugins []
   :dependencies [
                  [http-kit "2.1.16"]

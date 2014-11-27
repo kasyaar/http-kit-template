@@ -1,4 +1,4 @@
-(defproject kasyaar-http-kit/lein-template "0.12.0"
+(defproject kasyaar-http-kit/lein-template "0.13.0"
   :description "Template for http-kit, compojure simple projects"
   :deploy-repositories [["releases" {:url "https://clojars.org/repo" :sign-releases false}]]
   :url "http://github.com/kasyaar/http-kit-template"
